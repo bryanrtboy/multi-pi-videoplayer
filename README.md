@@ -12,7 +12,7 @@ I suggest setting up one Pi with all of the functions working and then cloning i
    * sudo nano /etc/fstab
    * then add the line to the end
    * /dev/sda1 /mnt/usb vfat defaults,nofail 0 2
-   * This will assumes there is only one drive plugged into the Pi.
+   * This assumes there is only one drive plugged into the Pi.
  4. The server and pi's should be on the same wifi network, and I am using standard dhcp (no static ip's)
  5. Set up the Pi's to allow ssh logging in without passwords [link](https://www.raspberrypi.org/documentation/remote-access/ssh/passwordless.md)
  6. Set each client to allow empty passwords
