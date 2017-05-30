@@ -11,11 +11,7 @@ hosts = ['client0', 'client1', 'client2','client3', 'client4']
 client = ParallelSSHClient(hosts)
 values = ["bear","cake","fork","pipe","gun"]
 
-def init():
-  choices = values
-
 def open_movies():
-
   choices = list(values)
 
   for x in range(len(hosts)):
@@ -76,5 +72,4 @@ def open_movies_wait_for_output():
 
 
 if __name__ == "__main__":
-  init()
   open_movies()
